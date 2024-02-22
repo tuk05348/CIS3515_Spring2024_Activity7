@@ -23,7 +23,7 @@ class TextSizeActivity : AppCompatActivity() {
         with (findViewById(R.id.textSizeSelectorRecyclerView) as RecyclerView) {
 
             // TODO Step 2: Pass selected value back to activity that launched TextSizeActivity
-            adapter = TextSizeAdapter(textSizes){
+            adapter = TextSizeAdapter(textSizes){selectedTextSize ->
 
             }
             layoutManager = LinearLayoutManager(this@TextSizeActivity)
