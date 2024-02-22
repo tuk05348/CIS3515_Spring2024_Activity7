@@ -20,11 +20,10 @@ class DisplayActivity : AppCompatActivity() {
     val launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
         if(it.resultCode == RESULT_OK){
             it.data?.apply {
-                lyricsDisplayTextView.textSize = getFloatExtra(TEXT_SIZE_KEY, 22f)
+
             }
         }
     }
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
